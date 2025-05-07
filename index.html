@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="../modelo/modelo.css">
+    <style>
+        label{
+            display: inline;
+            text-align: center;
+            width: auto;
+        }
+
+        button{
+            display: inline;
+            width: auto;
+            padding: 5px;
+        }
+
+        button:active{
+            background-color: rgb(0, 132, 255);
+        }
+
+       #tarefa{
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        padding: 2px;
+        height: auto;
+        display: inline;
+       }
+
+       .item{
+        margin-bottom: 10px;
+        list-style-position: inside;
+        margin-left: 15px;
+        margin-top: 5px;
+       }
+
+    </style>
+</head>
+<body>
+    <section class="conteiner">
+        <h1>LISTA DE TAREFAS</h1>
+        <div>
+            <label for="tarefa">Adicione uma tarefa: </label>
+            <input type="text" name="tarefa" id="tarefa">
+            <button>enter</button>
+        </div>
+        <ul class="tarefas">
+
+        </ul>
+
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
